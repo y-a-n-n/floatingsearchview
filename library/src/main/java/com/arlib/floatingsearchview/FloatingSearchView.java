@@ -1357,8 +1357,7 @@ public class FloatingSearchView extends FrameLayout {
                 if (isSuggestionItemsFillRecyclerView) {
                     suggestionsListLm.setReverseLayout(false);
                 } else {
-                    mSuggestionsAdapter.reverseList();
-                    suggestionsListLm.setReverseLayout(true);
+                    mSuggestionsList.invalidate();
                 }
                 mSuggestionsList.setAlpha(1);
             }
